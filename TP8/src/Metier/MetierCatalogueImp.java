@@ -2,12 +2,10 @@ package Metier;
 
 import java.util.List;
 
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.PreparedStatement;
+import java.sql.*;
 
 public class MetierCatalogueImp implements IMetier {
 
-	@Override
 	public void addCategorie(categorie c) {
 		Connection conn = SingletonConnection.getConnection();
 		try {
