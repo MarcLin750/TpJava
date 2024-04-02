@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="437.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biodata.controller.grafikController">
+   <children>
+      <Label layoutX="757.0" layoutY="14.0" text="Informations en tableau" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableDetail" layoutX="710.0" layoutY="47.0" prefHeight="316.0" prefWidth="283.0">
+         <columns>
+            <TableColumn minWidth="0.0" prefWidth="8.0" />
+            <TableColumn fx:id="colDetailAnnee" prefWidth="97.0" text="année" />
+            <TableColumn fx:id="colDetailNombre" prefWidth="177.0" text="nombre de personnes" />
+         </columns>
+      </TableView>
+      <StackedBarChart fx:id="bar" categoryGap="20.0" layoutY="13.0" prefHeight="399.0" prefWidth="664.0" title="Graphique Année de naissance">
+         <xAxis>
+            <CategoryAxis fx:id="barX" animated="false" label="année de naissance" side="BOTTOM" tickLabelFill="#3208da" tickLabelRotation="-45.0">
+               <tickLabelFont>
+                  <Font size="11.0" />
+               </tickLabelFont>
+            </CategoryAxis>
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="barY" label="nombre de personnes" minorTickCount="1" side="LEFT" tickLabelFill="#698300" upperBound="10.0">
+               <tickLabelFont>
+                  <Font size="11.0" />
+               </tickLabelFont>
+            </NumberAxis>
+         </yAxis>
+      </StackedBarChart>
+      <Separator layoutX="688.0" orientation="VERTICAL" prefHeight="437.0" prefWidth="6.0" />
+      <Button fx:id="btnRafraichir" layoutX="771.0" layoutY="375.0" mnemonicParsing="false" onAction="#rafraichir" prefHeight="25.0" prefWidth="167.0" text="Rafraîchir" />
+   </children>
+</AnchorPane>

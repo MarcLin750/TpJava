@@ -1,0 +1,35 @@
+package com.TP13;
+
+import java.awt.EventQueue;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Fenetre extends JFrame {
+	
+	public Fenetre() {
+		initFenetre();
+	}
+	
+	private void initFenetre() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		
+		
+	}
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Fenetre frame = new Fenetre();
+					frame.setSize(500, 400);
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+}

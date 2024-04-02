@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="953.0" stylesheets="@../css/biodataCss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biodata.controller.biodataController">
+   <children>
+      <TabPane layoutY="85.0" prefHeight="462.0" prefWidth="953.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0">
+        <tabs>
+          <Tab fx:id="tabBiodata" text="Informations personnelles">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="975.0">
+                     <children>
+                        <Separator layoutX="723.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="436.0" prefWidth="6.0" />
+                        <Label layoutX="744.0" layoutY="25.0" text="Saisie informations" textFill="#000000c8" underline="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="744.0" layoutY="75.0" spacing="10.0">
+                           <children>
+                              <VBox layoutX="714.0" layoutY="165.0" spacing="3.0">
+                                 <children>
+                                    <Label layoutX="714.0" layoutY="165.0" text="ID" />
+                                    <TextField fx:id="txtId" layoutX="714.0" layoutY="182.0" prefHeight="25.0" prefWidth="228.0" promptText="Id Auto" />
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="712.0" layoutY="210.0" spacing="3.0">
+                                 <children>
+                                    <Label layoutX="714.0" layoutY="165.0" text="Nom" />
+                                    <TextField fx:id="txtNom" layoutX="714.0" layoutY="182.0" prefHeight="25.0" prefWidth="228.0" promptText="nom et prénom" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="3.0">
+                                 <children>
+                                    <Label layoutX="714.0" layoutY="165.0" text="Adresse" />
+                                    <TextArea fx:id="txtAdresse" prefHeight="62.0" prefWidth="228.0" promptText="adresse complète" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="3.0">
+                                 <children>
+                                    <Label layoutX="714.0" layoutY="165.0" text="Date de naissance" />
+                                    <DatePicker fx:id="dateNaissance" prefHeight="25.0" prefWidth="228.0" promptText="Date de naissance" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Button fx:id="btnEnregistrer" layoutX="868.0" layoutY="342.0" mnemonicParsing="false" onAction="#aksiSimpan" prefHeight="25.0" prefWidth="104.0" text="Enregistrer" />
+                        <TableView fx:id="tableData" layoutX="26.0" layoutY="25.0" onMouseClicked="#klikTableData" prefHeight="347.0" prefWidth="686.0">
+                          <columns>
+                            <TableColumn minWidth="8.0" prefWidth="9.0" />
+                            <TableColumn fx:id="colId" prefWidth="50.0" text="ID" />
+                              <TableColumn fx:id="colNom" prefWidth="148.0" text="Nom" />
+                              <TableColumn fx:id="colAdresse" prefWidth="146.0" text="Adresse" />
+                              <TableColumn fx:id="colAnnee" prefWidth="152.0" text="Date de naissance" />
+                              <TableColumn fx:id="colAction" prefWidth="179.0" text="Action" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="txtChercher" layoutX="26.0" layoutY="384.0" onKeyReleased="#rechercher" prefHeight="25.0" prefWidth="296.0" promptText="Recherche par nom" />
+                        <Button fx:id="btnRafraichir" layoutX="754.0" layoutY="342.0" mnemonicParsing="false" onAction="#aksiRefresh" prefHeight="25.0" prefWidth="104.0" text="Rafraîchir" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabGrafiknaissance" text="Graphique">
+            <content>
+              <AnchorPane fx:id="paneLoadGrafik" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <AnchorPane prefHeight="85.0" prefWidth="1019.0" styleClass="headerPane">
+         <children>
+            <Text fill="WHITE" layoutX="175.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informations Biographiques" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="51.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -12,6 +12,9 @@ public class categorie {
 		this.produits = new ArrayList<produit>();
 	}
 
+	public categorie() {
+	}
+
 	public int getIdCategorie() {
 		return idCategorie;
 	}
@@ -37,3 +40,4 @@ public class categorie {
 	}
 	
 }
+

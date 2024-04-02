@@ -1,0 +1,46 @@
+
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
+
+public class UI extends JFrame{
+
+	public UI() {
+		initUI();
+	}
+	
+	private void initUI() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	
+		JButton btnParcourir = new JButton("Parcourir");
+		btnParcourir.setSize(200,50);
+		JButton btnAjouter = new JButton("Ajouter");
+		btnAjouter.setSize(200,50);
+		JTextField ID = new JTextField();
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					UI frame = new UI();
+					frame.setSize(500,400);
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+}

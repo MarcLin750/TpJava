@@ -15,6 +15,10 @@ public class produit {
 		this.idCategorie = idCategorie;
 	}
 	
+	public produit() {
+		
+	}
+	
 	public String getIdProduit() {
 		return this.idProduit;
 	}
@@ -23,7 +27,7 @@ public class produit {
 		this.idProduit = idProduit;
 	}
 	
-	public String designationProduit() {
+	public String getDesignationProduit() {
 		return this.designationProduit;
 	}
 	

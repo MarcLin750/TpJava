@@ -8,11 +8,11 @@ public interface IMetier {
 	
 	public void addProduct(produit p, int idCategorie);
 	
-	public List<produit> getProduitParmotcle(String mc);
+	public List<produit> getProduitParMotCle(String mc);
+
+	public List<categorie> getAllCategorie();
 	
 	public List<produit> getProduitParIdCategorie(int idCategorie);
-	
-	public List<categorie> getAllCategorie();
 	
 	public categorie getCategorie(int idCategorie);
 	
