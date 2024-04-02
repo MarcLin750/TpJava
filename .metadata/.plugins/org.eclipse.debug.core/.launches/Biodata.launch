@@ -14,4 +14,5 @@
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="biodata.Biodata"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="GSB"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="GSB"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="--module-path &quot;C:\Users\marcl\Documents\App.download\javafx-sdk-22\lib&quot; --add-modules javafx.controls,javafx.fxml"/>
 </launchConfiguration>
