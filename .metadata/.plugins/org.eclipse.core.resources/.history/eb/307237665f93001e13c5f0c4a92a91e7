@@ -1,0 +1,21 @@
+package File;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class authent {
+
+	public static void main(String[] args) {
+		String ligne;
+		BufferedReader br; // objet BufferedReader pour lire les lignes
+		boolean test = false;
+		br = new BufferedReader(new FileReader("C:\\Users\\marcl\\Documents\\Ecole\\Java\\TD5\\src\\in.txt"));
+		
+
+	}
+	
+	public static void authent(String filename) {
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package File;
+
+public class authent {
+
+	public static void main(String[] args) {
+		String ligne;
+		BufferedReader br; \\ objet BufferedReader pour lire les lignes
+		
+
+	}
+	
+	public static void authent(String filename) {
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+
+import javafx.application.Application;
+import javafx.event.*;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
+public class SimpleEventTest extends Application {
+public void start(Stage primaryStage) {
+Pane aPane = new Pane();
+Button aButton = new Button("Clique moi");
+aButton.relocate(100, 10);
+aButton.setPrefSize(100, 30);
+aPane.getChildren().add(aButton);
+aButton.setOnAction(new EventHandler<ActionEvent>() {
+public void handle(ActionEvent actionEvent) {
+System.out.println("Je suis cliqué!");
+} });
+// Connect the event handler to the button
+primaryStage.setTitle("créer un Handler");
+primaryStage.setScene(new Scene(aPane, 300,50));
+primaryStage.show();
+}
+// Set title of window // Set size of window
+
+public static void main(String[] args) {launch(args); } }

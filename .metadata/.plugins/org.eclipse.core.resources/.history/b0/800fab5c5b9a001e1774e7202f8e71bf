@@ -1,0 +1,19 @@
+package Metier;
+
+import java.util.List;
+
+public interface IMetier {
+	
+	public void addCategorie(categorie c);
+	
+	public void addProduct(produit p, int idCategorie);
+	
+	public List<produit> getProduitParmotcle(String mc);
+	
+	public List<produit> getProduitParIdCategorie(int idCategorie);
+	
+	public List<categorie> getAllCategorie();
+	
+	public categorie getCategorie(int idCategorie);
+	
+}

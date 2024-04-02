@@ -1,0 +1,22 @@
+package File;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+public class compteur {
+
+	public static void main(String[] args) {
+		try {
+			// "C:\\Users\\marcl\\Documents\\Ecole\\Java\\TD5\\src\\in.txt"
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
