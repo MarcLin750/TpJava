@@ -1,3 +1,0 @@
-User1 passUser1
-User2 passUser2
-User3 passUser3
